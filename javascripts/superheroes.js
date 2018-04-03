@@ -11,7 +11,11 @@ const buildDomString = (heroArray) => {
         heroCard +=         `<h3 class="panel-title">${hero.name}</h3>`;
         heroCard +=     `</div>`;
         heroCard +=     `<div class="panel-body">`;
-        heroCard +=         `<img src="${hero.image}" class="charImage">`;
+        if (hero.gender === "Male") {
+            heroCard +=         `<img src="${hero.image}" class="charImage maleCharImage">`;
+        } else if (hero.gender === "Female") {
+            heroCard +=         `<img src="${hero.image}" class="charImage femaleCharImage">`;
+        }
         heroCard +=         `<p class="charDescription">${hero.description}</p>`;
         heroCard +=     `</div>`;
         heroCard += `</div>`;
