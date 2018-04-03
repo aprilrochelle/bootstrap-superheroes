@@ -2,6 +2,21 @@ body {
     background-color: #504a4a;
 }
 
-h1 {
-    color: white;
+.panel > .panel-heading {
+    background-color: #f78f3f;
+}
+
+.panel {
+    background-color: #504a4a;
+    border: solid 1px white;
+    text-align: center;
+    height: 475px;
+}
+
+.charDescription {
+    color: #e23636;
+}
+
+.charImage {
+    border-radius: 50%;
 }

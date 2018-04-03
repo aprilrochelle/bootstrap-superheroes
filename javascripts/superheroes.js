@@ -5,8 +5,16 @@ const printToDom = (domString, divId) => {
 const buildDomString = (heroArray) => {
     let heroCard = '';
     heroArray.forEach((hero) => {
-        heroCard += `<div class="hero-card">`;
-        heroCard +=     `<h2>${hero.name}</h2>`;
+        heroCard += `<div class="col-md-3">`;
+        heroCard += `<div class="panel">`;
+        heroCard +=     `<div class="panel-heading">`;
+        heroCard +=         `<h3 class="panel-title">${hero.name}</h3>`;
+        heroCard +=     `</div>`;
+        heroCard +=     `<div class="panel-body">`;
+        heroCard +=         `<img src="${hero.image}" class="charImage">`;
+        heroCard +=         `<p class="charDescription">${hero.description}</p>`;
+        heroCard +=     `</div>`;
+        heroCard += `</div>`;
         heroCard += `</div>`;
     });
     printToDom(heroCard, 'hero-container');
