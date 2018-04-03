@@ -20,3 +20,11 @@ body {
 .charImage {
     border-radius: 50%;
 }
+
+.maleCharImage {
+    border: 5px solid #518CCA;
+}
+
+.femaleCharImage {
+    border: 5px solid pink;
+}
