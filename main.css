@@ -2,6 +2,10 @@ body {
     background-color: #504a4a;
 }
 
+h1 {
+    color: white;
+}
+
 .panel > .panel-heading {
     background-color: #f78f3f;
 }
