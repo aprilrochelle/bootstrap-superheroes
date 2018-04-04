@@ -6,7 +6,7 @@ const buildDomString = (heroArray) => {
     let heroCard = '';
     heroArray.forEach((hero) => {
         heroCard += `<li>`;
-        heroCard +=     `<a href="#">${hero.name}</a>`;
+        heroCard +=     `<a href="#" data-hero-id="${hero.id}">${hero.name}</a>`;
         heroCard += `</li>`;
         
     });
